@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .section {
+            padding: 50px 0;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .section p {
+            text-align: justify;
+        }
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 45%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JOSEPH ESPERAS SANTIAGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a third-year college student with a passion for mobile application development. Currently, I am freelancing and taking commissions to create custom Android applications. I specialize in building user-friendly, efficient, and high-performance mobile apps tailored to client needs. With hands-on experience in Android development, I am continuously expanding my skills and staying up-to-date with the latest technologies in the field.</p>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>GASGARDIO</h3>
+                    <h4>Mobile app that controls an IOT device</h4>
+                </div>
+                <div class="project">
+                    <h3>Capitols</h3>
+                    <h4>Mobile app that controls a miniture of Daet Minicipality</h4>
+                </div>
+                <div class="project">
+                    <h3>PSA Device Inventory</h3>
+                    <h4>Mobile app inventory system of PSA for thier devices</h4>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <h1>Email: josephjsssantiago@gmail.com</h1>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JosephTheGreat. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
